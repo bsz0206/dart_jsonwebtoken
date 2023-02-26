@@ -513,7 +513,7 @@ class CryptoUtils {
         .toList();
     String base64;
     if (checkHeader) {
-      if (lines.length < 2 ||
+      if (lines.length < 1 ||
           !lines.first.startsWith('-----BEGIN') ||
           !lines.last.startsWith('-----END')) {
         throw ArgumentError('The given string does not have the correct '
